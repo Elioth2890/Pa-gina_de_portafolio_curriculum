@@ -1,0 +1,64 @@
+.columns {
+  grid-template-columns: auto;
+  justify-content: center;
+}
+.box {
+  height: 200px;
+  width: 500px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  margin: 10px;
+  padding: 20px;
+}
+.box h2 {
+  color: yellowgreen;
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+.box p {
+  color: white;
+  font-size: 1.1rem;
+}
+#submit {
+  padding: 15px 20px;
+  margin: 30px;
+  width: 30%;
+  border-radius: 20px;
+  background-color: #000000dc;
+  color: #c7c6c6dc;
+  border: none;
+  outline: none;
+}
+
+@keyframes movimiento-lateral {
+  from {
+    left: 20px;
+  }
+
+  to {
+    left: 200px;
+  }
+}
+
+#anim {
+  padding: 10px 60px;
+  margin: 10px;
+  width: 15%;
+  align-items: center;
+  border-radius: 20px;
+  animation-name: movimiento-lateral;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  /*para que vuelva a su posicion inicial */
+  width: 50px;
+  background-color: #000000dc;
+  color: #c7c6c6dc;
+  position: relative;
+}
+#anim:hover {
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  box-shadow: 0 0 10px white, 0 0 30px white, 0 0 15px white;
+}

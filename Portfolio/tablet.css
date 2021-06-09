@@ -1,0 +1,68 @@
+.columns{
+    justify-content: center;
+    padding-left: 20px;
+}
+.box{
+    height: 200px;
+    width: 400px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    margin: 10px;
+    padding: 10px;
+}
+.box h2{
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+.box p{
+    font-size: 1rem;
+}
+
+/*  Imagen mia */
+.sobre_mi img{
+    padding: 0px 20px;
+    width: 400px;
+    height: 300px;
+}
+.name{
+    padding: 5px;
+}
+.name h2{
+    font-size: 1.7rem;
+}
+.name p{
+    font-size: 1rem;
+}
+
+@keyframes movimiento-lateral {
+    from {
+      left: 20px;
+    }
+  
+    to {
+      left: 200px;
+    }
+  }
+
+#anim {
+    padding: 10px 100px;
+    margin: 10px;
+    width: 15%;
+    align-items: center;
+    border-radius: 20px;
+    animation-name: movimiento-lateral;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    /*para que vuelva a su posicion inicial */
+    width: 50px;
+    background-color: #000000dc;
+    color: #c7c6c6dc;
+    position: relative;
+  }
+  #anim:hover {
+      cursor: pointer;
+      background-color: white;
+      color: black;
+      box-shadow: 0 0 10px white, 0 0 30px white, 0 0 15px white;
+    }

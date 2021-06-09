@@ -1,0 +1,96 @@
+/* Navbar */
+.navbar ul {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Headings */
+.heading {
+  font-size: 1.3rem;
+}
+
+/* galeria Images */
+.galeria img {
+  width: 270px;
+  height: 360px;
+}
+
+/* sobre_mi Seccion */
+.sobre_mi {
+  flex-direction: column;
+}
+.sobre_mi h2 {
+  text-align: center;
+}
+
+.sobre_mi img {
+  width: 200px;
+  height: 150px;
+  padding: 0px 15px;
+}
+
+#message {
+  width: 40%;
+  height: 200px;
+}
+
+.box {
+  height: 150px;
+  width: 250px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  margin: 10px;
+  padding: 10px;
+}
+.box h2 {
+  color: yellowgreen;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+.box p {
+  color: white;
+  font-size: 0.8rem;
+}
+#submit {
+  padding: 15px 20px;
+  margin: 30px;
+  width: 30%;
+  border-radius: 20px;
+  background-color: #000000dc;
+  color: #c7c6c6dc;
+  border: none;
+  outline: none;
+}
+
+@keyframes movimiento-lateral {
+  from {
+    left: 20px;
+  }
+
+  to {
+    left: 95px;
+  }
+}
+
+#anim {
+  padding: 10px 60px;
+  margin: 10px;
+  width: 15%;
+  align-items: center;
+  border-radius: 20px;
+  animation-name: movimiento-lateral;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  /*para que vuelva a su posicion inicial */
+  width: 50px;
+  background-color: #000000dc;
+  color: #c7c6c6dc;
+  position: relative;
+}
+#anim:hover {
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  box-shadow: 0 0 10px white, 0 0 30px white, 0 0 15px white;
+}
